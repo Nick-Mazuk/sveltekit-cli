@@ -31,7 +31,7 @@ export const createLayout = async (args: Args): Promise<void> => {
     if (options.reset) {
         const hasCustomFont = doesProductionFileExist('src/lib/css/fonts.css')
         const replacements: Replacements = []
-        if (!hasCustomFont) replacements.push(["import '$lib/css/fonts.css'", ''])
+        if (!hasCustomFont) replacements.push(["import '\\$lib/css/fonts.css'\\n", ''])
         cloneFileToProduction(
             'create-layout/__layout.reset.svelte',
             `src/routes/${pagePath}/__layout.reset.svelte`,
