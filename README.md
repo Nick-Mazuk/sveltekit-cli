@@ -46,7 +46,16 @@ kit <cmd> [args]
 ## Usage
 
 ```bash
+kit <cmd> [args]
 
+Commands:
+  kit create-page      Creates a new page
+  kit create-layout    Creates a new layout
+  kit create-endpoint  Creates a new endpoint
+
+Options:
+  -v, --version  Show version number                                   [boolean]
+  -h, --help     Show help                                             [boolean]
 ```
 
 ## License
