@@ -1,3 +1,4 @@
 templates
 *.js
+*.cjs
 build-readme
