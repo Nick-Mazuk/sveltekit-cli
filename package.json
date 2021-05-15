@@ -5,7 +5,8 @@
     "type": "module",
     "scripts": {
         "build": "esbuild src/index.ts --outfile=index.js --bundle --platform=node --target=node16.1 --format=esm --external:prompts --external:fs-extra",
-        "preversion": "npm run build"
+        "preversion": "npm run build",
+        "lint": "tsc && eslint . --fix"
     },
     "keywords": [],
     "author": "",

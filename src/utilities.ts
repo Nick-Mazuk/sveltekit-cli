@@ -20,7 +20,8 @@ export type RequiredOptions = {
 export const validatePath = (input: string): boolean | string => {
     if (input === '') return 'This cannot be blank'
     if (input.match(/\s/u)) return 'do not use spaces'
-    if (!input.match(/^[[a-z/-\].]+$/u)) return 'use kabob case'
+    // eslint-disable-next-line no-useless-escape -- actually needed
+    if (!input.match(/^[[a-z\/\-\].\d]+$/u)) return 'use kabob case'
     if (input.match(/--/u)) return 'cannot use two dashes in a row'
     if (input.match(/\/\//u)) return 'cannot use two slashes in a row'
     return true

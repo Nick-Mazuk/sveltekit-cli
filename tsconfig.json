@@ -15,8 +15,8 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "outDir": "./js",
-        "declaration": true
+        "declaration": true,
+        "noEmit": true
     },
     "include": [
         "src/**/*.ts",
@@ -24,7 +24,9 @@
     ],
     "exclude": [
         "node_modules",
-        "js**/*",
-        "esm**/*"
+        "js",
+        "esm",
+        "*.js",
+        "templates"
     ]
 }
