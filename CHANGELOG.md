@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.3...v1.0.4) (2021-05-15)
+
+
+### Bug Fixes
+
+* fix readme generation ([abe4167](https://github.com/Nick-Mazuk/sveltekit-cli/commit/abe41670247821a0018a8b348816c0411b1eea97))
+
 ## [1.0.3](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.2...v1.0.3) (2021-05-15)
 
 
