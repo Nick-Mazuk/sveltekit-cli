@@ -18,7 +18,7 @@ export const createEndpoint = async (args: Args): Promise<void> => {
     const options = await getOptions(args, {
         path: {
             command: true,
-            prompt: "What's the path for the page?",
+            prompt: "What's the path for the endpoint?",
             type: 'string',
             validate: validatePath,
         },
