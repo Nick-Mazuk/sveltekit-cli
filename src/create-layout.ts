@@ -7,7 +7,7 @@ import {
     doesProductionFileExist,
 } from './utilities'
 
-export const createEndpoint = async (args: Args): Promise<void> => {
+export const createLayout = async (args: Args): Promise<void> => {
     const options = await getOptions(args, {
         path: {
             command: true,
