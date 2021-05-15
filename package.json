@@ -2,7 +2,6 @@
     "name": "@nick-mazuk/sveltekit-cli",
     "version": "0.0.4",
     "description": "",
-    "main": "dist/index.js",
     "type": "module",
     "scripts": {
         "build": "esbuild src/index.ts --outfile=index.js --bundle --platform=node --target=node16.1 --format=esm --external:prompts --external:fs-extra",
@@ -13,6 +12,10 @@
     "license": "MIT",
     "engines": {
         "node": ">=16"
+    },
+    "main": "index.js",
+    "bin": {
+        "kit": "./index.js"
     },
     "files": [
         "index.js",
@@ -34,9 +37,6 @@
         "semantic-release": "^17.4.3",
         "typescript": "^4.2.4",
         "yargs": "^17.0.1"
-    },
-    "bin": {
-        "kit": "./dist/index.js"
     },
     "dependencies": {
         "fs-extra": "^10.0.0",
