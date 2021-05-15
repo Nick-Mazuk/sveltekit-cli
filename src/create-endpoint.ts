@@ -36,5 +36,5 @@ export const createEndpoint = async (args: Args): Promise<void> => {
     if (contents === '') contents += endpointContents
     contents += '\n'
     contents += replaceFileContents(endpointFunctionContents, [['METHOD', String(options.method)]])
-    writeFileToProduction(`src/routes/${pagePath}.ts`, contents)
+    writeFileToProduction(`src/routes/${pagePath}.ts`, contents, true)
 }

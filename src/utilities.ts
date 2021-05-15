@@ -90,10 +90,19 @@ export const getTemplateContents = (name: string): string => {
     return fs.readFileSync(templatePath).toString()
 }
 
-export const writeFileToProduction = (finalLocation: string, contents: string): void => {
+export const writeFileToProduction = (
+    finalLocation: string,
+    contents: string,
+    force?: boolean
+): void => {
     const location = createValidFilePath(`./${finalLocation}`)
+    if (force !== true && doesProductionFileExist(finalLocation)) {
+        console.log(`Skipping ${location} -- file already exists`)
+        return
+    }
     fs.ensureFileSync(location)
     fs.writeFileSync(location, contents)
+    console.log(`+ ${location}`)
 }
 
 export const replaceFileContents = (contents: string, replacements: Replacements): string => {
