@@ -10,7 +10,12 @@ const getUrlPath = (pagePath: string): string => {
 
 export const createPage = async (args: Args): Promise<void> => {
     const options = await getOptions(args, {
-        path: { command: true, prompt: 'path', type: 'string', validate: validatePath },
+        path: {
+            command: true,
+            prompt: "What's the path for the page?",
+            type: 'string',
+            validate: validatePath,
+        },
     })
     const pagePath = String(options.path)
         .replace('.svelte', '')

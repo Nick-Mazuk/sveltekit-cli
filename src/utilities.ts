@@ -70,24 +70,50 @@ export const createValidFilePath = (inputPath: string): string => {
     return path.join(...splitPath)
 }
 
+export const doesProductionFileExist = (filePath: string): boolean => {
+    const location = createValidFilePath(`./${filePath}`)
+    return fs.existsSync(location)
+}
+
+export const getProductionFileContent = (filePath: string): string => {
+    const doesExist = doesProductionFileExist(filePath)
+    if (!doesExist) return ''
+    const location = createValidFilePath(`./${filePath}`)
+    return fs.readFileSync(location).toString()
+}
+
+export const getTemplateContents = (name: string): string => {
+    const templatePath = fileURLToPath(
+        new URL(createValidFilePath(`./templates/${name}`), import.meta.url).href
+    )
+    return fs.readFileSync(templatePath).toString()
+}
+
+export const writeFileToProduction = (finalLocation: string, contents: string): void => {
+    const location = createValidFilePath(`./${finalLocation}`)
+    fs.ensureFileSync(location)
+    fs.writeFileSync(location, contents)
+}
+
+export const replaceFileContents = (contents: string, replacements: [string, string][]): string => {
+    let newContents = contents
+
+    replacements.forEach(([target, replacement]) => {
+        const regex = new RegExp(target, 'gu')
+        newContents = newContents.replace(regex, replacement)
+    })
+
+    return newContents
+}
+
 export const cloneFileToProduction = (
     templateName: string,
     finalLocation: string,
     replacements?: [string, string][]
 ): void => {
-    const templatePath = fileURLToPath(
-        new URL(createValidFilePath(`./templates/${templateName}`), import.meta.url).href
-    )
-    let contents = fs.readFileSync(templatePath).toString()
-    if (replacements) {
-        replacements.forEach(([target, replacement]) => {
-            const regex = new RegExp(target, 'gu')
-            contents = contents.replace(regex, replacement)
-        })
-    }
-    const location = createValidFilePath(`./${finalLocation}`)
-    fs.ensureFileSync(location)
-    fs.writeFileSync(createValidFilePath(`./${finalLocation}`), contents)
+    let contents = getTemplateContents(templateName)
+    if (replacements) contents = replaceFileContents(contents, replacements)
+    writeFileToProduction(finalLocation, contents)
 }
 
 export const getAllTemplateFilePaths = (command: string): string[] => {
