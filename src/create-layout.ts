@@ -39,8 +39,5 @@ export const createLayout = async (args: Args): Promise<void> => {
         )
         return
     }
-    cloneFileToProduction(
-        'create-layout/__layout.reset.svelte',
-        `src/routes/${pagePath}/__layout.svelte`
-    )
+    cloneFileToProduction('create-layout/__layout.svelte', `src/routes/${pagePath}/__layout.svelte`)
 }
