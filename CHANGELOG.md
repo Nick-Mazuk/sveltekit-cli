@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.1...v1.0.2) (2021-05-15)
+
+
+### Bug Fixes
+
+* add build script to CI ([55f2f1b](https://github.com/Nick-Mazuk/sveltekit-cli/commit/55f2f1b19e59813f62989b928889b5e04f4cdcda))
+
 ## [1.0.1](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.0...v1.0.1) (2021-05-15)
 
 
