@@ -14,7 +14,7 @@ const validateMethod = (input: string) => {
         : 'Can only be "get", "post", "put", "patch", or "del"'
 }
 
-export const createPage = async (args: Args): Promise<void> => {
+export const createEndpoint = async (args: Args): Promise<void> => {
     const options = await getOptions(args, {
         path: {
             command: true,
