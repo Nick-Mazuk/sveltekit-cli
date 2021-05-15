@@ -19,7 +19,8 @@
     },
     "files": [
         "index.js",
-        "README.md"
+        "README.md",
+        "templates"
     ],
     "devDependencies": {
         "@nick-mazuk/eslint-config": "^0.8.11",
