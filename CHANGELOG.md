@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.0...v1.1.1) (2021-05-15)
+
+
+### Bug Fixes
+
+* migrate page seo to custom component ([5c7049d](https://github.com/Nick-Mazuk/sveltekit-cli/commit/5c7049d2270d37675166fc6008c4b68245d04069))
+
 # [1.1.0](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.4...v1.1.0) (2021-05-15)
 
 
