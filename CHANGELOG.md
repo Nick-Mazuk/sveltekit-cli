@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.2...v1.0.3) (2021-05-15)
+
+
+### Bug Fixes
+
+* don't override semantic release plugins ([d1c06db](https://github.com/Nick-Mazuk/sveltekit-cli/commit/d1c06db0e2e51f7b6da8b277738584198f34620c))
+
 ## [1.0.2](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.1...v1.0.2) (2021-05-15)
 
 
