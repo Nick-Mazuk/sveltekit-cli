@@ -28,7 +28,7 @@ export const createEndpoint = async (args: Args): Promise<void> => {
             validate: validateMethod,
         },
     })
-    const pagePath = String(options.path).replace('.ts', '').replace(/^\//u, '').replace(/\/&/u, '')
+    const pagePath = String(options.path).replace('.ts', '').replace(/^\//u, '').replace(/\/$/u, '')
     const endpointContents = getTemplateContents('create-endpoint/endpoint.ts')
     const endpointFunctionContents = getTemplateContents('create-endpoint/endpoint-function.ts')
     let contents = getProductionFileContent(`src/routes/${pagePath}.ts`)

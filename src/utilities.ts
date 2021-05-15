@@ -16,6 +16,7 @@ export type RequiredOptions = {
         prompt: string
     }
 }
+export type Replacements = [string, string][]
 
 export const validatePath = (input: string): boolean | string => {
     if (input === '') return 'This cannot be blank'
@@ -95,7 +96,7 @@ export const writeFileToProduction = (finalLocation: string, contents: string): 
     fs.writeFileSync(location, contents)
 }
 
-export const replaceFileContents = (contents: string, replacements: [string, string][]): string => {
+export const replaceFileContents = (contents: string, replacements: Replacements): string => {
     let newContents = contents
 
     replacements.forEach(([target, replacement]) => {
@@ -109,7 +110,7 @@ export const replaceFileContents = (contents: string, replacements: [string, str
 export const cloneFileToProduction = (
     templateName: string,
     finalLocation: string,
-    replacements?: [string, string][]
+    replacements?: Replacements
 ): void => {
     let contents = getTemplateContents(templateName)
     if (replacements) contents = replaceFileContents(contents, replacements)

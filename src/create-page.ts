@@ -20,7 +20,7 @@ export const createPage = async (args: Args): Promise<void> => {
     const pagePath = String(options.path)
         .replace('.svelte', '')
         .replace(/^\//u, '')
-        .replace(/\/&/u, '')
+        .replace(/\/$/u, '')
     cloneFileToProduction('create-page/page.svelte', `src/routes/${pagePath}.svelte`)
     cloneFileToProduction('create-page/cypress.ts', `cypress/integration/${pagePath}.test.ts`, [
         ['PAGE_PATH', getUrlPath(pagePath)],
