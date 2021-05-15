@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.0...v1.0.1) (2021-05-15)
+
+
+### Bug Fixes
+
+* add npmignore to eliminate install errors ([00bf0bf](https://github.com/Nick-Mazuk/sveltekit-cli/commit/00bf0bf675a58f755f7a82016a63d5b51f4d41a1))
+
 # 1.0.0 (2021-05-15)
 
 
