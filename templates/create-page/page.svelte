@@ -1,6 +1,6 @@
 <script lang="ts">
+    import Seo from '@nick-mazuk/ui-svelte/src/utilities/seo/seo.svelte'
+
 </script>
 
-<svelte:head>
-    <title>Title</title>
-</svelte:head>
+<Seo title="Title" siteName="{import.meta.env.VITE_PUBLIC_SITE_NAME}" />
