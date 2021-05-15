@@ -9,7 +9,12 @@ const args = yargs(process.argv.slice(2))
     .scriptName('kit')
     .usage('$0 <cmd> [args]')
     .command('create-page', 'Creates a new page')
-    .command('create-layout', 'Creates a new layout')
+    .command('create-layout', 'Creates a new layout', {
+        reset: {
+            type: 'boolean',
+            describe: 'Create a layout reset',
+        },
+    })
     .command('create-endpoint', 'Creates a new endpoint')
     .help()
     .alias('version', 'v')

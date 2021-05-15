@@ -5,6 +5,7 @@
     "eslint.run": "onType",
     "files.exclude": {
         "index.js": true,
-        "js": true
+        "js": true,
+        "*.js": true
     },
 }

@@ -1,5 +1,4 @@
-dist
-index.js
+*.js
 
 # Logs
 logs
