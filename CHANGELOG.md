@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.4...v1.1.0) (2021-05-15)
+
+
+### Features
+
+* add title tag to all new pages ([d41ab0b](https://github.com/Nick-Mazuk/sveltekit-cli/commit/d41ab0bf5055171ac3167fa85294b7bd2cec02fd))
+
 ## [1.0.4](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.0.3...v1.0.4) (2021-05-15)
 
 
