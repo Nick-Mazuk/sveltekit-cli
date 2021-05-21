@@ -4,3 +4,5 @@
 </script>
 
 <Seo title="Title" siteName="{import.meta.env.VITE_PUBLIC_SITE_NAME}" />
+
+<main id='main-content'></main>
