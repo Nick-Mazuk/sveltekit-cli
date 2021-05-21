@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.1...v1.1.2) (2021-05-21)
+
+
+### Bug Fixes
+
+* add main#main-content to page layout ([2ac0fe6](https://github.com/Nick-Mazuk/sveltekit-cli/commit/2ac0fe6aaabd5885ea4b3bc20a72578bb13455f9))
+
 ## [1.1.1](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.0...v1.1.1) (2021-05-15)
 
 
