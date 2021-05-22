@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.2...v1.1.3) (2021-05-22)
+
+
+### Bug Fixes
+
+* add loading progress indicator to layout reset ([1ac8700](https://github.com/Nick-Mazuk/sveltekit-cli/commit/1ac8700fcb2fe55e654dfa5c13d55d25b6245fde))
+
 ## [1.1.2](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.1...v1.1.2) (2021-05-21)
 
 
