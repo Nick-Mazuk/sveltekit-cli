@@ -1,12 +1,8 @@
 <script lang="ts">
-    import '@nick-mazuk/ui-config/lib/colors.css'
-    import '@nick-mazuk/ui-config/lib/styles.css'
-    import '$lib/css/fonts.css'
-
-    import LoadingProgressIndicator from '@nick-mazuk/ui-svelte/src/elements/loading-progress-indicator/loading-progress-indicator.svelte'
+    import ResetItems from '$lib/components/reset-items'
 
 </script>
 
-<LoadingProgressIndicator />
+<ResetItems />
 
 <slot />
