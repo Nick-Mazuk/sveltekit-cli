@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.3...v1.2.0) (2021-05-26)
+
+
+### Features
+
+* make layout reset more flexible and robust ([1d859ce](https://github.com/Nick-Mazuk/sveltekit-cli/commit/1d859ce2cdc171360a572f0afacd357d1471bf49))
+
 ## [1.1.3](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.2...v1.1.3) (2021-05-22)
 
 
