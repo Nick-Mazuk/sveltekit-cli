@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.2.1...v1.2.2) (2021-06-03)
+
+
+### Bug Fixes
+
+* allow building on vercel ([8d7a9da](https://github.com/Nick-Mazuk/sveltekit-cli/commit/8d7a9da727717b50f9043baa21b3dd89d9ccae5c))
+
 ## [1.2.1](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.2.0...v1.2.1) (2021-06-03)
 
 
