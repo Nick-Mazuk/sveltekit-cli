@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.2.0...v1.2.1) (2021-06-03)
+
+
+### Bug Fixes
+
+* reset items now has correct extension ([a5b89d1](https://github.com/Nick-Mazuk/sveltekit-cli/commit/a5b89d116bd78b589187ea3b4e75ac7e6fee9eae))
+
 # [1.2.0](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.1.3...v1.2.0) (2021-05-26)
 
 
