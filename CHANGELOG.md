@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.2.2...v1.2.3) (2021-06-08)
+
+
+### Bug Fixes
+
+* correct prompt wording for endpoints ([901c244](https://github.com/Nick-Mazuk/sveltekit-cli/commit/901c244f037a202f24e583d9eb57ef592418a45b))
+
 ## [1.2.2](https://github.com/Nick-Mazuk/sveltekit-cli/compare/v1.2.1...v1.2.2) (2021-06-03)
 
 
